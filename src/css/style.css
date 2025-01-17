@@ -150,5 +150,20 @@ header{
     
 }
 
+.barra {
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+    background-color: white; 
+  }
+  
+  .nav-pills {
+    top: 50px; 
+    z-index: 1020; 
+    background-color: white;
+    padding: 10px 0;
+  }
+  
+
 
 
