@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto-loja</title>
+  </head>
+ 
+  <body class="container">
+    <header id="topo">
+      <div class="sticky-top mx-10 my-2">
+      <nav class="barra navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <span class="logo navbar-brand" href="#">
+            <div class="logomarca">
+              <img src="./public/prototipoloja.png" alt="">
+            </div>
+          </span>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success bg-black text-white border-white " type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <nav class="nav nav-pills flex-column flex-sm-row">
+      <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="#">Active</a>
+      <li class="nav-item dropdown flex-sm-fill text-sm-center nav-link">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#">Separated link</a></li>
+        </ul>
+      </li>
+      <a class="flex-sm-fill text-sm-center nav-link" href="#">Link</a>
+      <a class="flex-sm-fill text-sm-center nav-link disabled" aria-disabled="true">Disabled</a>
+    </nav>
+    </header>
+
+    <div class="container">
+      <div id="destaques">
+        <div class="row">
+          <div class="estatico1 col-md-3"> 
+            <section class="img1">
+              <div class = "verao mulheres">
+                <img src="./public/Roupas-para-trabalhar-no-verao.jpg" alt="Crianças bem vestidas com roupas de verao">
+              </div>
+            </section>
+            <section class="img2">
+              <div class = "verao criancas">
+                <img src="./public/criancas na piscina.webp" alt="Crianças bem vestidas com roupas de verao">
+              </div>
+            </section>
+          </div>
+
+          <div class="carrossel col-md-6"> 
+            <section id="carrossel">
+              <div class="destaqueinterativo">
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="./public/masculinocasual.jpg" class="d-block w-100" alt="moda masculina">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./public/modaplussize.webp" class="d-block w-100" alt="moda plus size">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./public/femininotreino.jpg" class="d-block w-100" alt="Moda fitness feminina">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <div id="promocao" class="col-md-3">
+            <div class="geral-promocao">
+              <section class="cabecalho-promocao"><h1>Produtos em promoção:</h1></section>
+              <section class="itens container">
+                <div class="row">
+                  <div class="promocional relogio col-md-3">
+                    <div class="rolex">
+                      <img src="./public/relogio.jpg" alt="relogio masculino">
+                    </div>
+                  </div>
+                  <div class="promocional maquiagem col-md-3">
+                    <div class="rubyrose">
+                      <img src="./public/maquiagem.png" alt="itens de maquiagem">
+                    </div>
+                  </div>
+                  <div class="promocional porcelana col-md-3">
+                    <div class="tramontina">
+                      <img src="./public/porcelana.webp" alt="itens de porcelana">
+                    </div>
+                  </div>
+                  <div class="promocional sapato col-md-3">
+                    <div class="tenis">
+                      <img src="./public/tenis.webp" alt="tesnis esportivo">
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>

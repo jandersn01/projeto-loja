@@ -1,0 +1,154 @@
+header{
+    margin-bottom: 30px;
+}
+
+#destaques{
+   
+    height: 300px;
+    width: 100%;
+}
+
+#destaques .estatico1{
+    height: 300px;
+    width: 30%;
+}
+
+#destaques .estatico1 .mulheres img{
+    height: 145px;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px black;
+}
+
+#destaques .estatico1 .verao{
+    box-shadow: 0px 4px 8px black;
+    border-radius: 5px;
+}
+
+#destaques .estatico1 .criancas img{
+    margin-top:10px ;
+    height: 145px;
+    width: 100%;
+    border-radius: 5px;
+    
+}
+
+
+#destaques .carrossel {
+    height: 300px;
+    border-radius: 10px;
+    width: 45%;
+}
+
+
+#destaques .carousel-inner {
+    height: 300px;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0px 4px 8px black
+}
+
+#destaques .carrossel img {
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px black
+}
+
+#destaques #promocao{
+    background-color: rgb(203, 190, 206);
+    height: 300px;
+    width: 25%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px black
+}
+
+#promocao .cabecalho-promocao h1{
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size:x-large;
+}
+
+#promocao .relogio  {
+    margin-bottom: 20px;
+    height: 110px;
+    width: 50%;
+    background-color: rgb(60, 60, 237);
+    border-radius: 50%;
+}
+
+#promocao .relogio .rolex img{
+    margin-bottom: 10px;
+    height: 110px;
+    width: 100%;
+    background-color: rgb(65, 121, 212);
+    border-radius: 50%;
+}
+
+#promocao .maquiagem{
+    height: 110px;
+    width: 50%;
+    background-color: rgb(60, 60, 237);
+    border-radius: 50%;
+}
+#promocao .maquiagem .rubyrose img{
+    height: 110px;
+    width: 100%;
+    background-color: white;
+    border-radius: 50%;
+}
+
+#promocao .porcelana{
+    height: 110px;
+    width: 50%;
+    background-color: rgb(60, 60, 237);
+    border-radius: 50%;
+}
+
+#promocao .porcelana .tramontina img{
+    height: 110px;
+    width: 100%;
+    background-color: red;
+    border-radius: 50%;
+}
+#promocao .sapato{
+    height: 110px;
+    width: 50%;
+    background-color: rgb(60, 60, 237);
+    border-radius: 50%;
+    
+}
+
+#promocao .sapato .tenis img{
+    height: 110px;
+    width: 100%;
+    background-color: green;
+    border-radius: 50%;
+}
+
+#topo .barra{
+    width: 100%;
+    background-color: rgb(60, 60, 237);
+    border-radius: 5px;
+}
+
+#topo .logo .logomarca{
+    height: 50px;
+    width: 350px;
+    background-color: black;
+    border-radius: 5px;
+    
+}
+
+#topo .logo .logomarca img{
+    height: 50px;
+    width: 350px;
+    background-color: black;
+    border-radius: 5px;
+    
+}
+
+
+
