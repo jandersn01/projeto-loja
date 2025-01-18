@@ -4,4 +4,14 @@
 
 .loja{
     min-height: 6.5rem;
+    box-shadow: 0px 4px 8px black;
+}
+
+.titulo-marcas{
+    margin-top: 20px;
+    box-shadow: 0px 4px 8px black;
+}
+
+.titulo-marcas h1{
+    text-align: center;
 }
