@@ -17,11 +17,11 @@ header{
     height: 145px;
     width: 100%;
     border-radius: 5px;
-    box-shadow: 0px 4px 8px black;
+    box-shadow: 0px 4px 8px rgb(147, 55, 62);
 }
 
 #destaques .estatico1 .verao{
-    box-shadow: 0px 4px 8px black;
+    box-shadow: 0px 4px 8px rgb(147, 55, 62);
     border-radius: 5px;
 }
 
@@ -45,22 +45,22 @@ header{
     height: 300px;
     border-radius: 10px;
     width: 100%;
-    box-shadow: 0px 4px 8px black
+    box-shadow: 0px 4px 8px rgb(147, 55, 62);
 }
 
 #destaques .carrossel img {
     height: 300px;
     width: 100%;
     border-radius: 10px;
-    box-shadow: 0px 4px 8px black
+    box-shadow: 0px 4px 8px rgb(147, 55, 62)
 }
 
 #destaques #promocao{
-    background-color: rgb(203, 190, 206);
+    background-color:rgb(216, 145, 189);
     height: 300px;
     width: 25%;
     border-radius: 10px;
-    box-shadow: 0px 4px 8px black
+    box-shadow: 0px 4px 8px rgb(147, 55, 62)
 }
 
 #promocao .cabecalho-promocao h1{
@@ -75,7 +75,7 @@ header{
     margin-bottom: 20px;
     height: 110px;
     width: 50%;
-    background-color: rgb(60, 60, 237);
+    background-color: white;
     border-radius: 50%;
 }
 
@@ -83,14 +83,14 @@ header{
     margin-bottom: 10px;
     height: 110px;
     width: 100%;
-    background-color: rgb(65, 121, 212);
+    background-color: white;
     border-radius: 50%;
 }
 
 #promocao .maquiagem{
     height: 110px;
     width: 50%;
-    background-color: rgb(60, 60, 237);
+    background-color: white;
     border-radius: 50%;
 }
 #promocao .maquiagem .rubyrose img{
@@ -103,7 +103,7 @@ header{
 #promocao .porcelana{
     height: 110px;
     width: 50%;
-    background-color: rgb(60, 60, 237);
+    background-color:white;
     border-radius: 50%;
 }
 
@@ -116,7 +116,7 @@ header{
 #promocao .sapato{
     height: 110px;
     width: 50%;
-    background-color: rgb(60, 60, 237);
+    background-color: white;
     border-radius: 50%;
     
 }
@@ -130,9 +130,9 @@ header{
 
 #topo .barra{
     width: 100%;
-    background-color: rgb(60, 60, 237);
+    background-color: rgb(0, 0, 0);
     border-radius: 5px;
-    box-shadow: 0px 4px 8px black;
+    box-shadow: 0px 4px 8px rgb(147, 55, 62);
 }
 
 #topo .logo .logomarca{
@@ -163,6 +163,21 @@ header{
     z-index: 1020; 
     background-color: white;
     padding: 10px 0;
+  }
+
+  #rodape{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background-color: black;
+    width: 100%;
+    height: 100px;
+    box-shadow: 0px 4px 8px rgb(147, 55, 62);
+    border-radius: 5px;
+  }
+
+  #rodape p{
+    text-align: center;
+    color: white;
   }
   
 
