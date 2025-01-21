@@ -28,16 +28,20 @@
 
 .minhadiv1{
     height: 400px;
-    background-color: black;
+    background: linear-gradient(to bottom, pink, white);
     padding: 0px;
     border-radius: 5PX;
 }
 
 .minhadiv2{
     margin-top: 5px;
-    height: 400px;
     border-radius: 5PX;
     background-color: black;
+    border-radius: 5px;
+    background-color: black;
+    display: flex; /* Flexbox para layout automático */
+    flex-wrap: wrap; /* Permite que os cartões "quebrem" para uma nova linha */
+    gap: 10px; /* Espaço entre os cartões */
    
 }
 
@@ -53,10 +57,9 @@
 
 .minhadiv2 .ct1{
     margin-top: 10PX;
-    margin-left: 10px;
-    margin-right: 2px;
     height: 385PX;
     width: 19%;
+    width: calc(20% - 10px);
     background-color: white;
     border-radius: 5PX;
     padding-left: 0px;
@@ -64,6 +67,51 @@
 
 .ct1 img{
     height: 339px;
-    width: 246px;
+    width: 248px;   
+}
+
+.material-symbols-outlined{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.minhadiv2 .ct1 .preco{
+    font-weight: 1000;
+    color: rgb(247, 133, 12);
+}
+
+.minhadiv2 .ct1 .nome{
+    font-weight: 400;
+}
+
+.cabecalho-ofertas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: pink;
+    height: 60px;
+}
+
+.cabecalho-ofertas .ofertas,
+.cabecalho-ofertas .veja-mais{
+    width: 50%;
+}
+.cabecalho-ofertas .veja-mais{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+
+}
+
+.descricao{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.descricao .info{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
 }
 

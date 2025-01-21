@@ -48,5 +48,78 @@ const lojas = [
         ],
         name: 'CareToMe',  
     }  ];
+
+const produtos = [
+  {
+    id: '01',
+    images:'../public/imgs/produtos/camisaregatamasc.jpg',
+    name: 'Camisa Regata',
+    preco: 'R$20,00'
+
+  },
+  {
+    id: '02',
+    images: '',
+    name: 'Camisa',
+    preco: '30'
+
+  },
+  {
+    id: '03',
+    images: '',
+    name: 'Camisa',
+    preco: '30'
+
+  },
+  {
+    id: '04',
+    images: '',
+    name: 'Camisa',
+    preco: '30'
+
+  },
+  {
+    id: '05',
+    images: '',
+    name: 'Camisa',
+    preco: '30'
+
+  },
+  {
+    id: '06',
+    images: '',
+    name: 'Camisa',
+    preco: '30'
+
+  },
+  {
+    id: '07',
+    images: '',
+    name: 'Camisa',
+    preco: '30'
+
+  },
+  {
+    id: '08',
+    images: '',
+    name: 'Camisa',
+    preco: '30'
+
+  },
+  {
+    id: '09',
+    images: '',
+    name: 'Camisa',
+    preco: '30'
+
+  },
+  {
+    id: '10',
+    images: '',
+    name: 'Camisa',
+    preco: '30'
+
+  },
+]
   
   export default lojas;
