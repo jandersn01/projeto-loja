@@ -96,8 +96,9 @@
 }
 .cabecalho-ofertas .veja-mais{
     display: flex;
-    flex-direction: row;
-    justify-content: end;
+    flex-direction: column;
+    justify-content:end;
+    align-items:end;
 
 }
 
