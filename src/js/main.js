@@ -35,17 +35,19 @@ imageSlideshow(lojas);
 
 function carregarProdutos(Produto){
   return `
-    <div class="ct1 col-md-3">
-            <img src="${Produto.images}" alt="${Produto.name}">          
-            <div class="descricao">
-              <div class="info">
-                <span class="nome">${Produto.name}</span>
-                <span class="preco">R$${Produto.preco}</span>
-              </div>
-              <span class="material-symbols-outlined">
-                add_shopping_cart
-                </span>
-            </div>
+  <div class="ct1 col-md-3">
+      <img src="${Produto.images}" alt="${Produto.name}">
+      <div class="descricao">
+        <div class="info">
+          <span class="nome">${Produto.name}</span>
+          <span class="preco">R$${Produto.preco}</span>
+        </div>
+        <span class="material-symbols-outlined">
+          add_shopping_cart
+        </span>
+      </div>
+    </div>
+  
   `
 }
 

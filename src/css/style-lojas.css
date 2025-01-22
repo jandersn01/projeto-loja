@@ -36,9 +36,7 @@
 #minhadiv2{
     margin-top: 5px;
     border-radius: 5PX;
-    background-color: black;
     border-radius: 5px;
-    background-color: black;
     display: flex; /* Flexbox para layout automático */
     flex-wrap: wrap; /* Permite que os cartões "quebrem" para uma nova linha */
     gap: 10px; /* Espaço entre os cartões */
@@ -81,7 +79,7 @@
 }
 
 #minhadiv2 .ct1 .nome{
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .cabecalho-ofertas{
