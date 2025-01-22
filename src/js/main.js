@@ -1,7 +1,7 @@
 import '../css/style.css';
 import '../css/style-lojas.css';
 import 'bootstrap';
-import lojas from './objects.js';
+import {lojas,produtos} from './objects.js';
 import 'bootstrap/dist/css/bootstrap.css';
 
 function buildLojas(loja) {
@@ -36,7 +36,7 @@ imageSlideshow(lojas);
 function carregarProdutos(Produto){
   return `
     <div class="ct1 col-md-3">
-            <img src="${Produto.image}" alt="${Produto.name}">          
+            <img src="${Produto.images}" alt="${Produto.name}">          
             <div class="descricao">
               <div class="info">
                 <span class="nome">${Produto.name}</span>
@@ -48,6 +48,9 @@ function carregarProdutos(Produto){
             </div>
   `
 }
+
+const produto = document.getElementById('minhadiv2');
+produto.innerHTML = produtos.map((prod) => carregarProdutos(prod)).join('');
 
 
 

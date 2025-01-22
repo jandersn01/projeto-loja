@@ -122,4 +122,4 @@ const produtos = [
   },
 ]
   
-  export default lojas;
+  export  {produtos,lojas};

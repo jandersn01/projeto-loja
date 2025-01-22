@@ -33,7 +33,7 @@
     border-radius: 5PX;
 }
 
-.minhadiv2{
+#minhadiv2{
     margin-top: 5px;
     border-radius: 5PX;
     background-color: black;
@@ -55,7 +55,7 @@
     border-radius: 5PX;
 }
 
-.minhadiv2 .ct1{
+#minhadiv2 .ct1{
     margin-top: 10PX;
     height: 385PX;
     width: 19%;
@@ -75,12 +75,12 @@
     font-weight: 600;
 }
 
-.minhadiv2 .ct1 .preco{
+#minhadiv2 .ct1 .preco{
     font-weight: 1000;
     color: rgb(247, 133, 12);
 }
 
-.minhadiv2 .ct1 .nome{
+#minhadiv2 .ct1 .nome{
     font-weight: 400;
 }
 
