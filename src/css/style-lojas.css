@@ -114,3 +114,23 @@
     width: 85%;
 }
 
+.carrinho button{
+    border: none;
+    background-color: orange;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    position: fixed;
+    z-index: 10000;
+    bottom: 40px;
+    right: 70px;
+}
+
+.carrinho span{
+    font-size: 70px;
+    color: black;
+}
+

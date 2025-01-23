@@ -36,7 +36,7 @@ imageSlideshow(lojas);
 function carregarProdutos(Produto){
   return `
   <div class="ct1 col-md-3">
-      <img src="${Produto.images}" alt="${Produto.name}">
+      <img src="${Produto.images}" alt="${Produto.name}" data-id="${Produto.id}">
       <div class="descricao">
         <div class="info">
           <span class="nome">${Produto.name}</span>
