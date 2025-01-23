@@ -81,4 +81,18 @@ function adicionarAoCarrinho(click){
 const produtoContainer = document.getElementById('minhadiv2');
 produtoContainer.addEventListener('click',adicionarAoCarrinho);
 
+function carregarCarrinho(lista){
+  return `
+  <div class="loja col-md-2 text-center">
+  <img src="${lista.images}" class="card-img-top" alt="${lista.name}" data-id="${lista.id}">
+  <div class="card-body">
+  <p class="card-text">${lista.name}</p>
+  </div>
+  </div>;
+  `
+}
+
+const cart = document.getElementById('itensdocarrinho');
+cart.innerHTML = itensdocarrinho.map((item) => carregarCarrinho(item));
+
 
