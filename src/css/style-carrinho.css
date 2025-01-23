@@ -1,0 +1,35 @@
+.telamodal{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed; /* Fixo em relação à janela */
+    top: 100px;
+    left: 400px;
+    width: 50%;
+    height: 80%;
+    z-index: 20000; /* Sobrepõe outros elementos */
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo {
+    background-color: white;
+    width: 100%; 
+    padding: 5px;
+    border-radius: 10px;
+    position: relative;
+    overflow-y: auto;
+}
+
+.conteudo .close {
+    position: absolute;
+    top: 4px;
+    right: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#itensCarrinho {
+    margin-top: 20px;
+    text-align: left;
+}

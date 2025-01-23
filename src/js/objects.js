@@ -23,23 +23,8 @@ const lojas = [
           '../public/imgs/ToDress/casacopreto.jpg',
         ],
         name: 'ToDress',  
-    } , {
-        id: 'watchu',
-        images: [
-          '../public/imgs/Watchu/camisa.jpg',
-          '../public/imgs/Watchu/conjunto.jpg',
-          '../public/imgs/Watchu/shortverde.jpg',
-        ],
-        name: 'Watchu',  
-    } , {
-        id: '+juice',
-        images: [
-          '../public/imgs/+Juice/sutienbege.jpg',
-          '../public/imgs/+Juice/pijama.jpg',
-          '../public/imgs/+Juice/sutianbranco.jpg',
-        ],
-        name: '+Juice',  
-    }, {
+    } ,
+    {
         id: 'caretome',
         images: [
           '../public/imgs/CareToMe/perfumemarrom.jpg',
@@ -47,7 +32,16 @@ const lojas = [
           '../public/imgs/CareToMe/perfumevinho.jpg',
         ],
         name: 'CareToMe',  
-    }  ];
+    } 
+     , {
+        id: 'watchu',
+        images: [
+          '../public/imgs/Watchu/camisa.jpg',
+          '../public/imgs/Watchu/conjunto.jpg',
+          '../public/imgs/Watchu/shortverde.jpg',
+        ],
+        name: 'Watchu',  
+    } ];
 
 const produtos = [
   {
@@ -121,5 +115,9 @@ const produtos = [
 
   },
 ]
+
+const itensdocarrinho = [
+
+]
   
-  export  {produtos,lojas};
+  export  {produtos,lojas,itensdocarrinho};

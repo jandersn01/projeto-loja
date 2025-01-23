@@ -126,8 +126,8 @@
       <h1>Encontre as melhores Lojas e as melhores marcas</h1>
     </section>
     
-    <div id="lojas" class="container">
-      <main class="row">
+    <div id="lojas">
+      <main class="lojas">
       </main>
     </div>
 
@@ -156,16 +156,26 @@
     </footer>
 
     <div class="carrinho"> 
-      <button> 
+      <button class="abrir"> 
         <span class="material-symbols-outlined">
           shopping_cart_checkout
         </span>
       </button>
     </div>
        
-    
-    
-   
+    <div id="modalcarrinho" class="telamodal">
+      <div class="conteudo">
+        <span class="close">&times;</span>
+        <h2>Seu Carrinho</h2>
+        <div id="itensdocarrinho">
+        </div>
+        <div class="pagamento">
+          <button>pagar</button>
+          <h2>total</h2>
+        </div>
+      </div>
+    </div>
+
     <script type="module" src="/js/main.js"></script>
   </body>
 </html>

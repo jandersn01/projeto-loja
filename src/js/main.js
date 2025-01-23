@@ -1,12 +1,13 @@
 import '../css/style.css';
 import '../css/style-lojas.css';
+import '../css/style-carrinho.css';
 import 'bootstrap';
-import {lojas,produtos} from './objects.js';
+import {lojas,produtos,itensdocarrinho} from './objects.js';
 import 'bootstrap/dist/css/bootstrap.css';
 
 function buildLojas(loja) {
   return `
-  <div class="loja col-2 my-2 text-center">
+  <div class="loja col-md-2 text-center">
   <img src="${loja.images[0]}" class="card-img-top" alt="${loja.name}" data-id="${loja.id}">
   <div class="card-body">
   <p class="card-text">${loja.name}</p>
@@ -42,7 +43,7 @@ function carregarProdutos(Produto){
           <span class="nome">${Produto.name}</span>
           <span class="preco">R$${Produto.preco}</span>
         </div>
-        <span class="material-symbols-outlined">
+        <span id="add" class="material-symbols-outlined">
           add_shopping_cart
         </span>
       </div>
@@ -54,5 +55,30 @@ function carregarProdutos(Produto){
 const produto = document.getElementById('minhadiv2');
 produto.innerHTML = produtos.map((prod) => carregarProdutos(prod)).join('');
 
+function abrirCarrinho(){
+  const carrinho = document.getElementById('modalcarrinho');
+  carrinho.style.display = 'flex';
+}
+const abrir = document.querySelector('.carrinho .abrir');
+abrir.addEventListener('click', abrirCarrinho);
+
+function fecharCarrinho(){
+  const carrinho = document.getElementById('modalcarrinho');
+  carrinho.style.display = 'none';
+}
+const close = document.querySelector('.conteudo .close');
+close.addEventListener('click', fecharCarrinho);
+
+function adicionarAoCarrinho(click){
+  if(click.target.id === 'add'){
+    const idProduto = click.target.closest('.ct1').querySelector('img').getAttribute('data-id');
+    const array = (produtos.filter((p) => p.id === idProduto));
+    itensdocarrinho.push(array[0]);
+    console.log(itensdocarrinho)
+  }
+}
+
+const produtoContainer = document.getElementById('minhadiv2');
+produtoContainer.addEventListener('click',adicionarAoCarrinho);
 
 
