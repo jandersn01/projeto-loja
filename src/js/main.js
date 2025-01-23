@@ -57,6 +57,8 @@ produto.innerHTML = produtos.map((prod) => carregarProdutos(prod)).join('');
 
 function abrirCarrinho(){
   const carrinho = document.getElementById('modalcarrinho');
+  const cart = document.getElementById('itensdocarrinho');
+  cart.innerHTML = itensdocarrinho.map((item) => carregarCarrinho(item));
   carrinho.style.display = 'flex';
 }
 const abrir = document.querySelector('.carrinho .abrir');
@@ -92,7 +94,5 @@ function carregarCarrinho(lista){
   `
 }
 
-const cart = document.getElementById('itensdocarrinho');
-cart.innerHTML = itensdocarrinho.map((item) => carregarCarrinho(item));
 
 
