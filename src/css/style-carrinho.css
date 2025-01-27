@@ -1,32 +1,57 @@
 .telamodal{
     display: flex;
-    background-color: rgba(0, 0, 0, 0.5);
+    flex-direction: column;
     position: fixed; /* Fixo em relação à janela */
-    top: 100px;
+    top: 70px;
     left: 400px;
-    width: 50%;
-    height: 80%;
     z-index: 20000; /* Sobrepõe outros elementos */
-    justify-content: center;
-    align-items: center;
+
+}
+
+.cabecalho-carrinho{
+    border-radius: 5px 5px 0px 0px;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    height: 50px;
+    box-shadow: 0px 0px 8px PINK;
 }
 
 .conteudo {
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.5);
     width: 100%; 
     padding: 5px;
-    border-radius: 10px;
     position: relative;
+    max-height: 500px;
+    min-width: 600px;
     overflow-y: auto;
 }
 
-.conteudo .close {
+.cabecalho-carrinho .close {
     position: absolute;
-    top: 4px;
+    top: 0px;
     right: 10px;
     font-size: 30px;
     font-weight: bold;
     cursor: pointer;
+}
+
+.pagamento{
+    box-shadow: 0px 0px 8px PINK;
+    border-radius: 0px 0px 5px 5px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    height: 50px;
+    position: sticky;
+    bottom: 0;
+}
+
+.pagamento button{
+    background-color: orange;
+    width: 100px;
+    font-size: 20px;
+    border-radius: 0px 0px 5px 0px;
 }
 
 #itensCarrinho {

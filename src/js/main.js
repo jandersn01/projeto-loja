@@ -68,7 +68,7 @@ function fecharCarrinho(){
   const carrinho = document.getElementById('modalcarrinho');
   carrinho.style.display = 'none';
 }
-const close = document.querySelector('.conteudo .close');
+const close = document.querySelector('.cabecalho-carrinho .close');
 close.addEventListener('click', fecharCarrinho);
 
 function adicionarAoCarrinho(click){

@@ -1,13 +1,13 @@
 #lojas .lojas{
-    background-color:black;
-    margin-left: 8px;
     display: flex; /* Flexbox para layout automático */
     flex-wrap: wrap; /* Permite que os cartões "quebrem" para uma nova linha */
     gap: 50px; /* Espaço entre os cartões */
     background: linear-gradient(to bottom, black, white);
 }
 
+
 .loja{
+    margin-left:3px;
     min-height: 6.5rem;
     border-radius: 5px;
     width: calc(20% - 10px);
@@ -16,7 +16,7 @@
 .titulo-marcas{
     height: 60px;
     margin-top: 20px;
-    border-radius: 5px;
+    border-radius: 5px 5px 0px 0px;
     background-color: black;
 }
 
