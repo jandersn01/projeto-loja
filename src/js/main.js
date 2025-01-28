@@ -52,6 +52,8 @@ function carregarProdutos(Produto){
   `
 }
 
+const ofertas = document.getElementById('minhadiv1');
+ofertas.innerHTML = produtos.map((prod) => carregarProdutos(prod)).join('');
 const produto = document.getElementById('minhadiv2');
 produto.innerHTML = produtos.map((prod) => carregarProdutos(prod)).join('');
 

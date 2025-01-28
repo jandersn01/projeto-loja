@@ -23,7 +23,10 @@
 .titulo-marcas h1{
     color: white;
     text-align: center;
-    font-size: 20px;
+    font-size: 30px;
+    margin-top: 4px;
+    padding-top: 5px;
+
 }
 
 .amostra{
@@ -39,11 +42,13 @@
     height: 60px;
 }
 
-.minhadiv1{
+#minhadiv1{
     height: 400px;
     background: linear-gradient(to bottom, pink, white);
     padding: 0px;
-    border-radius: 5PX;
+    display: flex; /* Flexbox para layout automático */
+    flex-wrap: wrap; /* Permite que os cartões "quebrem" para uma nova linha */
+    gap: 10px; /* Espaço entre os cartões */
 }
 
 #minhadiv2{
@@ -56,14 +61,14 @@
    
 }
 
-.minhadiv1 .ct1{
+#minhadiv1 .ct1{
     margin-top: 10PX;
-    margin-left: 10px;
-    margin-right: 2px;
     height: 385PX;
     width: 19%;
+    width: calc(20% - 10px);
     background-color: white;
     border-radius: 5PX;
+    padding-left: 0px;
 }
 
 #minhadiv2 .ct1{
@@ -87,12 +92,12 @@
     cursor: pointer;
 }
 
-#minhadiv2 .ct1 .preco{
+#minhadiv2 .ct1 .preco,#minhadiv1 .ct1 .preco {
     font-weight: 1000;
     color: rgb(247, 133, 12);
 }
 
-#minhadiv2 .ct1 .nome{
+#minhadiv2 .ct1 .nome, #minhadiv1 .ct1 .nome{
     font-weight: 500;
 }
 
