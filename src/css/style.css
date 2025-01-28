@@ -3,9 +3,8 @@ header{
 }
 
 #destaques{
-   
-    height: 300px;
-    width: 100%;
+   display: flex;
+   flex-direction: row;
 }
 
 #destaques .estatico1{
@@ -33,99 +32,10 @@ header{
     
 }
 
-
-#destaques .carrossel {
-    height: 300px;
-    border-radius: 10px;
-    width: 45%;
-}
-
-
-#destaques .carousel-inner {
-    height: 300px;
-    border-radius: 10px;
-    width: 100%;
-    box-shadow: 0px 4px 8px pink;
-}
-
 #destaques .carrossel img {
     height: 300px;
     width: 100%;
-    border-radius: 10px;
     box-shadow: 0px 4px 8px PINK
-}
-
-#destaques #promocao{
-    background-color:pink;
-    height: 300px;
-    width: 25%;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px PINK
-}
-
-#promocao .cabecalho-promocao h1{
-    font-size: 15px;
-    margin-top: 5px;
-    margin-bottom: 20px;
-    text-align: center;
-    font-size:x-large;
-}
-
-#promocao .relogio  {
-    margin-bottom: 20px;
-    height: 110px;
-    width: 50%;
-    background-color: white;
-    border-radius: 50%;
-}
-
-#promocao .relogio .rolex img{
-    margin-bottom: 10px;
-    height: 110px;
-    width: 100%;
-    background-color: white;
-    border-radius: 50%;
-}
-
-#promocao .maquiagem{
-    height: 110px;
-    width: 50%;
-    background-color: white;
-    border-radius: 50%;
-}
-#promocao .maquiagem .rubyrose img{
-    height: 110px;
-    width: 100%;
-    background-color: white;
-    border-radius: 50%;
-}
-
-#promocao .porcelana{
-    height: 110px;
-    width: 50%;
-    background-color:white;
-    border-radius: 50%;
-}
-
-#promocao .porcelana .tramontina img{
-    height: 110px;
-    width: 100%;
-    background-color: red;
-    border-radius: 50%;
-}
-#promocao .sapato{
-    height: 110px;
-    width: 50%;
-    background-color: white;
-    border-radius: 50%;
-    
-}
-
-#promocao .sapato .tenis img{
-    height: 110px;
-    width: 100%;
-    background-color: green;
-    border-radius: 50%;
 }
 
 #topo .barra{
