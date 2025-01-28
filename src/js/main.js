@@ -41,7 +41,7 @@ function carregarProdutos(Produto){
       <div class="descricao">
         <div class="info">
           <span class="nome">${Produto.name}</span>
-          <span class="preco">R$${Produto.preco}</span>
+          <span class="preco">${Produto.preco}</span>
         </div>
         <span id="add" class="material-symbols-outlined">
           add_shopping_cart
@@ -76,7 +76,9 @@ function adicionarAoCarrinho(click){
     const idProduto = click.target.closest('.ct1').querySelector('img').getAttribute('data-id');
     const array = (produtos.filter((p) => p.id === idProduto));
     itensdocarrinho.push(array[0]);
-    console.log(itensdocarrinho)
+    //console.log(itensdocarrinho)
+    const cart = document.getElementById('itensdocarrinho');
+    cart.innerHTML = itensdocarrinho.map((item) => carregarCarrinho(item));
   }
 }
 
@@ -92,6 +94,20 @@ function carregarCarrinho(lista){
   </div>
   </div>;
   `
+}
+
+function setQuantidade(event){
+
+}
+
+function isEmpty(){
+  if(itensdocarrinho.length() === 0){
+
+  }
+}
+
+function removerItem(){
+  
 }
 
 

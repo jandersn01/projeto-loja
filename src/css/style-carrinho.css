@@ -58,3 +58,55 @@
     margin-top: 20px;
     text-align: left;
 }
+
+.content-shopp-car{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 600px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.content-shopp-car .card-info{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.card-info .preco{
+    font-size: 30px;
+    font-weight: 1000;
+    color: orange;
+    margin-left: 10px;
+}
+
+.card-info .card-text{
+    font-weight: 500;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.card-info .qntd{
+    font-weight: 1000;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card-info .qntd button{
+    margin: 10px;
+    width: 30px;
+
+}
+
+.card-info .qntd .material-symbols-outlined:hover{
+    color: red;
+}
+
+.picture{
+    width: 50%;
+}
