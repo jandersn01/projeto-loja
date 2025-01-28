@@ -5,36 +5,43 @@ header{
 #destaques{
    display: flex;
    flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-between;
 }
 
 #destaques .estatico1{
-    height: 300px;
-    width: 30%;
+    height: 100%;
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    justify-items: space-between;
+    gap: 10;
 }
 
 #destaques .estatico1 .mulheres img{
-    height: 145px;
+    height: 200px;
     width: 100%;
     border-radius: 5px;
     box-shadow: 0px 4px 8px pink;
 }
 
-#destaques .estatico1 .verao{
-    box-shadow: 0px 4px 8px PINK;
-    border-radius: 5px;
-}
-
 #destaques .estatico1 .criancas img{
     margin-top:10px ;
-    height: 145px;
+    height: 194px;
     width: 100%;
     border-radius: 5px;
+    box-shadow: 0px 4px 8px pink;
     
 }
 
-#destaques .carrossel img {
-    height: 300px;
-    width: 100%;
+#destaques #carrossel{
+  height: 400px;
+  width: 65%;
+}
+
+#destaques #carrossel img {
+    height: 400px;
+    width: 300px;
     box-shadow: 0px 4px 8px PINK
 }
 
