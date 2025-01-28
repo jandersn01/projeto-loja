@@ -116,8 +116,46 @@ const produtos = [
   },
 ]
 
-const itensdocarrinho = [
+const promocoes = [
+  {
+    id: '01',
+    images: 'public/imgs/ofertas/furadeira.jpg',
+    name: 'Furadeira Elétrica',
+    preco: 'R$305,00',
+    promo: 'R$266,99'
+
+  },
+  {
+    id: '02',
+    images: 'public/imgs/ofertas/camisabeisebol.jpg',
+    name: 'Camisa Beisebol',
+    preco: 'R$70,00',
+    promo: 'R$60,00'
+  },
+  {
+    id: '03',
+    images: 'public/imgs/ofertas/relogiofemino.jpg',
+    name: 'Relógio Feminino Dourado',
+    preco: 'R$25,00',
+    promo: 'R$17,65'
+  },
+  {
+    id: '04',
+    images: 'public/imgs/ofertas/pincelmaquiagem.webp',
+    name: 'Pinceis de Maquiagem',
+    preco: 'R$20,00',
+    promo: 'R$15,00'
+  },
+  {
+    id: '05',
+    images: 'public/imgs/ofertas/boné.jpg',
+    name: 'Camisa Anime',
+    preco: 'R$30,00',
+    promo: 'R$25,00'
+  },
 
 ]
+
+const itensdocarrinho = []
   
-  export  {produtos,lojas,itensdocarrinho};
+  export  {produtos,lojas,itensdocarrinho,promocoes};

@@ -62,12 +62,11 @@
 }
 
 #minhadiv1 .ct1{
+    margin-left:2px;
     margin-top: 10PX;
     height: 385PX;
-    width: 19%;
     width: calc(20% - 10px);
     background-color: white;
-    border-radius: 5PX;
     padding-left: 0px;
 }
 
@@ -92,10 +91,28 @@
     cursor: pointer;
 }
 
-#minhadiv2 .ct1 .preco,#minhadiv1 .ct1 .preco {
+#minhadiv2 .ct1 .preco {
     font-weight: 1000;
     color: rgb(247, 133, 12);
 }
+
+#minhadiv1 .ct1 .preco {
+    font-weight: 1000;
+    color: rgb(247, 133, 12);
+}
+
+.preco{
+    display: flex;
+    gap: 10px;
+}
+.preco .currentprice{
+    text-decoration: line-through;
+}
+.preco .promo{
+    font-weight: 1000;
+    color: rgb(59, 247, 12);
+}
+
 
 #minhadiv2 .ct1 .nome, #minhadiv1 .ct1 .nome{
     font-weight: 500;

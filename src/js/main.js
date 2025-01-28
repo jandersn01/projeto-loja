@@ -2,7 +2,7 @@ import '../css/style.css';
 import '../css/style-lojas.css';
 import '../css/style-carrinho.css';
 import 'bootstrap';
-import {lojas,produtos,itensdocarrinho} from './objects.js';
+import {lojas,produtos,itensdocarrinho,promocoes} from './objects.js';
 import 'bootstrap/dist/css/bootstrap.css';
 
 function buildLojas(loja) {
@@ -52,8 +52,25 @@ function carregarProdutos(Produto){
   `
 }
 
+function carregarOfertas(oferta){
+  return `
+   <div class="ct1 col-md-3">
+        <img src="${oferta.images}" alt="${oferta.name}" data-id="${oferta.id}">
+        <div class="descricao">
+          <div class="info">
+            <span class="nome">${oferta.name}</span>
+            <span class="preco"><p class="currentprice">${oferta.preco}</p><p class="promo">${oferta.promo}</p></span>
+          </div>
+          <span id="add" class="material-symbols-outlined">
+            add_shopping_cart
+          </span>
+        </div>
+      </div>
+  `
+}
+
 const ofertas = document.getElementById('minhadiv1');
-ofertas.innerHTML = produtos.map((prod) => carregarProdutos(prod)).join('');
+ofertas.innerHTML = promocoes.map((promo) => carregarOfertas(promo)).join('');
 const produto = document.getElementById('minhadiv2');
 produto.innerHTML = produtos.map((prod) => carregarProdutos(prod)).join('');
 
