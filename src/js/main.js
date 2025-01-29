@@ -143,9 +143,11 @@ function removerItem(event){
   if(event.target.id === 'lixeira'){
     const id = event.target.closest('.content-shopp-car').querySelector('img').getAttribute('data-id');
     const index = itensdocarrinho.findIndex(item => item.id != id);
-      itensdocarrinho.splice(index, 1);
+    itensdocarrinho.splice(index, 1);
     const cart = document.getElementById('itensdocarrinho');
     cart.innerHTML = itensdocarrinho.map((item) => carregarCarrinho(item));
+    const total = document.querySelector('.pagamento .valorTotal')
+    total.innerHTML = `R$${itensdocarrinho.map((item) => item.preconum).reduce((acc,preco) => acc + preco,0)}`
   }
 }
 const conteudo = document.getElementById('itensdocarrinho');
