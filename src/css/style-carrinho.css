@@ -1,10 +1,10 @@
 .telamodal{
     display: flex;
     flex-direction: column;
-    position: fixed; /* Fixo em relação à janela */
+    position: fixed;
     top: 70px;
     left: 400px;
-    z-index: 20000; /* Sobrepõe outros elementos */
+    z-index: 20000;
 
 }
 
@@ -12,6 +12,7 @@
     border-radius: 5px 5px 0px 0px;
     background-color: white;
     position: sticky;
+    z-index: 500;
     top: 0;
     height: 50px;
     box-shadow: 0px 0px 8px PINK;
@@ -22,6 +23,7 @@
     width: 100%; 
     padding: 5px;
     position: relative;
+    min-height:300px ;
     max-height: 500px;
     min-width: 600px;
     overflow-y: auto;
@@ -36,6 +38,10 @@
     cursor: pointer;
 }
 
+.cabecalho-carrinho .close:hover{
+    color: red;
+}
+
 .pagamento{
     box-shadow: 0px 0px 8px PINK;
     border-radius: 0px 0px 5px 5px;
@@ -45,6 +51,19 @@
     height: 50px;
     position: sticky;
     bottom: 0;
+}
+
+.pagamento h2{
+    font-size: 40px;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+.pagamento .valorTotal{
+    align-self:self-end;
+    font-size: 30px;
+    font-weight: 1000;
+    color: rgb(247, 133, 12);
 }
 
 .pagamento button{
@@ -64,8 +83,7 @@
     flex-wrap: wrap;
     flex-direction: row;
     width: 600px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 2px;
 }
 
 .content-shopp-car .card-info{
@@ -74,6 +92,7 @@
     flex-direction: column;
     justify-content: space-between;
     width: 50%;
+    background-color: white;
 }
 
 .card-info .preco{

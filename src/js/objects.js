@@ -48,70 +48,80 @@ const produtos = [
     id: '01',
     images:'../public/imgs/produtos/camisaregatamasc.jpg',
     name: 'Camisa Regata',
-    preco: 'R$20,00'
+    preco: '20,00',
+    preconum: 20
 
   },
   {
     id: '02',
     images:'../public/imgs/produtos/correntesinox.jpg',
     name: 'Corrente inox',
-    preco: 'R$14,49'
+    preco: '14,49',
+    preconum: 14.49
 
   },
   {
     id: '03',
     images: '../public/imgs/produtos/calcacargofeminina.webp',
     name: 'Calça Cargo',
-    preco: 'R$78,00'
+    preco: '78,00',
+    preconum: 78
 
   },
   {
     id: '04',
     images: '../public/imgs/produtos/oculoslupa.jpg',
     name: 'Oculos Lupa',
-    preco: 'R$20,00'
+    preco: '20,00',
+    preconum: 20
 
   },
   {
     id: '05',
     images: '../public/imgs/produtos/tensifemininobranco.jpg',
     name: 'Tênis feminino',
-    preco: 'R$169,45'
+    preco: '169,45',
+    preconum: 169.45
 
   },
   {
     id: '06',
     images: '../public/imgs/produtos/kitcamisastreino.jpg',
     name: 'Kit Camisa treino',
-    preco: 'R$49,99'
+    preco: '49,99',
+    preconum: 49.99
 
   },
   {
     id: '07',
     images: '../public/imgs/produtos/saiagotica.jpg',
     name: 'Saia Gótica',
-    preco: 'R$60,00'
+    preco: '60,00',
+    preconum: 60
 
   },
   {
     id: '08',
     images: '../public/imgs/produtos/mochilaescolarfeminina.webp',
     name: 'Mochila Escolar',
-    preco: 'R$53,69'
+    preco: '53,69',
+    preconum: 53.69
 
   },
   {
     id: '09',
     images: '../public/imgs/produtos/moletomlanadelrey.jpg',
     name: 'Moleton LDR',
-    preco: 'R$60,00'
+    preco: '60,00',
+    preconum: 60
 
   },
   {
     id: '10',
     images: '../public/imgs/produtos/camisasanimepreta.jpg',
     name: 'Camisa Anime',
-    preco: 'R$30,00'
+    preco: '30,00',
+    preconum: 30
 
   },
 ]

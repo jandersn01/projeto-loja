@@ -41,7 +41,7 @@ function carregarProdutos(Produto){
       <div class="descricao">
         <div class="info">
           <span class="nome">${Produto.name}</span>
-          <span class="preco">${Produto.preco}</span>
+          <span class="preco">R$${Produto.preco}</span>
         </div>
         <span id="add" class="material-symbols-outlined">
           add_shopping_cart
@@ -78,6 +78,8 @@ function abrirCarrinho(){
   const carrinho = document.getElementById('modalcarrinho');
   const cart = document.getElementById('itensdocarrinho');
   cart.innerHTML = itensdocarrinho.map((item) => carregarCarrinho(item));
+  const total = document.querySelector('.pagamento .valorTotal')
+  total.innerHTML = `R$${itensdocarrinho.map((item) => item.preconum).reduce((acc,preco) => acc + preco,0)}`
   carrinho.style.display = 'flex';
 }
 const abrir = document.querySelector('.carrinho .abrir');
@@ -95,23 +97,36 @@ function adicionarAoCarrinho(click){
     const idProduto = click.target.closest('.ct1').querySelector('img').getAttribute('data-id');
     const array = (produtos.filter((p) => p.id === idProduto));
     itensdocarrinho.push(array[0]);
-    //console.log(itensdocarrinho)
+    console.log(itensdocarrinho)
     const cart = document.getElementById('itensdocarrinho');
     cart.innerHTML = itensdocarrinho.map((item) => carregarCarrinho(item));
+     const total = document.querySelector('.pagamento .valorTotal')
+  total.innerHTML = `R$${itensdocarrinho.map((item) => item.preconum).reduce((acc,preco) => acc + preco,0)}`
   }
 }
 
 const produtoContainer = document.getElementById('minhadiv2');
 produtoContainer.addEventListener('click',adicionarAoCarrinho);
 
-function carregarCarrinho(lista){
+function carregarCarrinho(item){
   return `
-  <div class="loja col-md-2 text-center">
-  <img src="${lista.images}" class="card-img-top" alt="${lista.name}" data-id="${lista.id}">
-  <div class="card-body">
-  <p class="card-text">${lista.name}</p>
-  </div>
-  </div>;
+  <div class="content-shopp-car">
+        <div class="picture col-md-4 text-center">
+          <img src="${item.images}" class="card-img-top" alt="${item.name}" data-id="${item.id}">
+        </div>
+        <div class="card-info">
+          <p class="card-text">${item.name}</p>
+          <span class="qntd">
+            <div class="d1">
+              <button class="som">+</button><span class="nitens">0</span><button class="sub">-</button>
+            </div>
+            <div class="d2">
+              <span class="material-symbols-outlined">delete</span> 
+            </div>
+          </span>
+          <span class="preco">${item.preco}</span>
+        </div>
+      </div>
   `
 }
 
@@ -121,8 +136,8 @@ function setQuantidade(event){
 
 function isEmpty(){
   if(itensdocarrinho.length() === 0){
-
-  }
+    return true;
+  } else {return false;}
 }
 
 function removerItem(){
