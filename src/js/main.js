@@ -100,13 +100,13 @@ function adicionarAoCarrinho(click){
     console.log(itensdocarrinho)
     const cart = document.getElementById('itensdocarrinho');
     cart.innerHTML = itensdocarrinho.map((item) => carregarCarrinho(item));
-     const total = document.querySelector('.pagamento .valorTotal')
-  total.innerHTML = `R$${itensdocarrinho.map((item) => item.preconum).reduce((acc,preco) => acc + preco,0)}`
+    const total = document.querySelector('.pagamento .valorTotal')
+    total.innerHTML = `R$${itensdocarrinho.map((item) => item.preconum).reduce((acc,preco) => acc + preco,0)}`
   }
 }
-
 const produtoContainer = document.getElementById('minhadiv2');
 produtoContainer.addEventListener('click',adicionarAoCarrinho);
+
 
 function carregarCarrinho(item){
   return `
@@ -118,10 +118,10 @@ function carregarCarrinho(item){
           <p class="card-text">${item.name}</p>
           <span class="qntd">
             <div class="d1">
-              <button class="som">+</button><span class="nitens">0</span><button class="sub">-</button>
+              <button class="som">-</button><span class="nitens">0</span><button class="sub">+</button>
             </div>
             <div class="d2">
-              <span class="material-symbols-outlined">delete</span> 
+              <span id="lixeira" class="material-symbols-outlined">delete</span> 
             </div>
           </span>
           <span class="preco">${item.preco}</span>
@@ -131,7 +131,6 @@ function carregarCarrinho(item){
 }
 
 function setQuantidade(event){
-
 }
 
 function isEmpty(){
@@ -140,9 +139,17 @@ function isEmpty(){
   } else {return false;}
 }
 
-function removerItem(){
-  
+function removerItem(event){
+  if(event.target.id === 'lixeira'){
+    const id = event.target.closest('.content-shopp-car').querySelector('img').getAttribute('data-id');
+    const index = itensdocarrinho.findIndex(item => item.id != id);
+      itensdocarrinho.splice(index, 1);
+    const cart = document.getElementById('itensdocarrinho');
+    cart.innerHTML = itensdocarrinho.map((item) => carregarCarrinho(item));
+  }
 }
+const conteudo = document.getElementById('itensdocarrinho');
+conteudo.addEventListener('click',removerItem)
 
 
 

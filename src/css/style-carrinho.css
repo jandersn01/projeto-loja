@@ -29,6 +29,12 @@
     overflow-y: auto;
 }
 
+.cabecalho-carrinho h2{
+    margin-left: 10px;
+    font-weight: 700;
+    font-style: italic;
+}
+
 .cabecalho-carrinho .close {
     position: absolute;
     top: 0px;
@@ -54,9 +60,9 @@
 }
 
 .pagamento h2{
-    font-size: 40px;
-    font-weight: 600;
+    font-weight: 700;
     margin-left: 5px;
+    align-self: self-end;
 }
 
 .pagamento .valorTotal{
@@ -120,6 +126,10 @@
     margin: 10px;
     width: 30px;
 
+}
+
+.card-info .qntd .material-symbols-outlined{
+    margin-right: 8px;
 }
 
 .card-info .qntd .material-symbols-outlined:hover{

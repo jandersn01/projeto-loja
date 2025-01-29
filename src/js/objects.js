@@ -166,6 +166,6 @@ const promocoes = [
 
 ]
 
-const itensdocarrinho = []
+let itensdocarrinho = []
   
   export  {produtos,lojas,itensdocarrinho,promocoes};
