@@ -1,7 +1,7 @@
 #lojas .lojas{
-    display: flex; /* Flexbox para layout automático */
-    flex-wrap: wrap; /* Permite que os cartões "quebrem" para uma nova linha */
-    gap: 50px; /* Espaço entre os cartões */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
     background: linear-gradient(to bottom, black, white);
 }
 
@@ -46,18 +46,18 @@
     height: 400px;
     background: linear-gradient(to bottom, pink, white);
     padding: 0px;
-    display: flex; /* Flexbox para layout automático */
-    flex-wrap: wrap; /* Permite que os cartões "quebrem" para uma nova linha */
-    gap: 10px; /* Espaço entre os cartões */
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px;
 }
 
 #minhadiv2{
     margin-top: 5px;
     border-radius: 5PX;
     border-radius: 5px;
-    display: flex; /* Flexbox para layout automático */
-    flex-wrap: wrap; /* Permite que os cartões "quebrem" para uma nova linha */
-    gap: 10px; /* Espaço entre os cartões */
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px;
    
 }
 
