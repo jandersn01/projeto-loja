@@ -2,8 +2,24 @@ import '../css/style.css';
 import '../css/style-lojas.css';
 import '../css/style-carrinho.css';
 import 'bootstrap';
-import {lojas,produtos,itensdocarrinho,promocoes} from './objects.js';
+import {lojas,produtos,itensdocarrinho,promocoes,img1,img2} from './objects.js';
 import 'bootstrap/dist/css/bootstrap.css';
+
+function carregarEstatico1(img){
+  return `<div class=" verao">
+          <img src="${img.images}" alt="${img.name}">
+        </div>`
+}
+const estatic1 = document.querySelector('.img1')
+estatic1.innerHTML = img1.map(i => carregarEstatico1(i))
+
+function carregarEstatico2(img){
+  return `<div class="verao">
+          <img src="${img.images}" alt="${img.name}">
+        </div>`
+}
+const estatic2 = document.querySelector('.img2')
+estatic2.innerHTML = img2.map(i => carregarEstatico1(i))
 
 function buildLojas(loja) {
   return `

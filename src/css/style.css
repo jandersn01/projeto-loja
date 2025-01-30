@@ -15,23 +15,14 @@ header{
     display: flex;
     flex-direction: column;
     justify-items: space-between;
-    gap: 10;
 }
 
-#destaques .estatico1 .mulheres img{
-    height: 200px;
+#destaques .estatico1 .verao img{
+    margin-top: 5px;
+    height: 195px;
     width: 100%;
     border-radius: 5px;
     box-shadow: 0px 4px 8px pink;
-}
-
-#destaques .estatico1 .criancas img{
-    margin-top:10px ;
-    height: 194px;
-    width: 100%;
-    border-radius: 5px;
-    box-shadow: 0px 4px 8px pink;
-    
 }
 
 #destaques #carrossel{
