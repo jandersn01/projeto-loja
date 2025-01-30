@@ -36,14 +36,14 @@ imageSlideshow(lojas);
 
 function carregarProdutos(Produto){
   return `
-  <div class="ct1 col-md-3">
+  <div class="ct1 col-md-3" translate="no">
       <img src="${Produto.images}" alt="${Produto.name}" data-id="${Produto.id}">
       <div class="descricao">
         <div class="info">
           <span class="nome">${Produto.name}</span>
           <span class="preco">R$${Produto.preco}</span>
         </div>
-        <span id="add" class="material-symbols-outlined">
+        <span id="add" class="material-symbols-outlined" translate="no">
           add_shopping_cart
         </span>
       </div>
@@ -120,7 +120,7 @@ function carregarCarrinho(item){
             <div class="d1">
               <button class="som">-</button><span class="nitens">0</span><button class="sub">+</button>
             </div>
-            <div class="d2">
+            <div class="d2" translate="no">
               <span id="lixeira" class="material-symbols-outlined">delete</span> 
             </div>
           </span>
@@ -137,7 +137,7 @@ function isEmpty(){
   if(itensdocarrinho.length() === 0){
     return true;
   } else {return false;}
-}
+} 
 
 function removerItem(event){
   if(event.target.id === 'lixeira'){
